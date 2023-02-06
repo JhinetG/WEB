@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    border: 2px double #28e888;
+    margin: 20px;
+    padding: 10px 20px 2px 5px;
+}
+div{
+    width: 80%;
+    height: 400px;
+}
+.images{
+    border: 1px solid yellow;
+    image-rendering: pixelated;
+    width: 30%;
+    height: 200px;
+    object-fit: scale-down;
+    object-position: top;
+}
+/* Estilos de tabla*/
+
+body{
+    font-size:1.0;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:auto ;
+}
+th{
+    padding: 1rem;
+    border: 4px solid black;
+    margin:auto ;
+}
+thead{
+    background-color: aquamarine;
+}
