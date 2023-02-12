@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width:90%;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    margin:1%;
+    font-size: 25px;
+}
+.titulo{
+    border: 10px double lightcoral;
+    background-color:#17cfdc;
+    padding: 5px;
+    text-align: center;
+}
+div{
+    border: 5px solid black;
+}
+/*agrupacion de selectores*/
+h1, section {
+    text-align: center;
+}
+/* Selector por atributo(id, class, name
+[class]{
+    background-color: bisque;
+}
+a[href]{
+    text-align: left;
+    margin-left: 4%;
+    color:black;
+}
+/* Selecion por prefijo*/
+a[href$=".com"]{
+    color: blueviolet;
+    padding:  10px;   
+}
