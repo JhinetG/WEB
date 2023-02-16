@@ -101,7 +101,7 @@ body{
 }
 .alerta{
     width: 25;
-    height: 100%;
+    height: 20%;
     background-color: #f25757;
     position: fixed;
     top: 35%;

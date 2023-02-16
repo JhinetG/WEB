@@ -1,18 +1,21 @@
+'use strict';
 const validateString = (cad)=>{
-    //Ternario -> Abrebiacion de if else
-    let response = (cad.length>3)? true : false; // Se esta validando el numero de la cadena
+    //Ternario-> abreviacion if else
+    let response = (cad.length>3) ? true : false;
     return response;
 }
-
-const validateAvg = (num)=>{ // se esta validando que el num este entre 0-5.
-    let response = (num>=0 && num<=5)? true : false;
+const validatevAvg = (num)=>{
+    let response = (num>=0 && num<=5) ? true : false;
     return response;
 }
-const checkAvg = (value)=>{ 
-    let result = (value >=3 && value<=5)?
-    "APROVADO" : "REPROVADO";
+const checkAvg = (value) => {
+    let result = (value>=3 && value<=5) ? "Aprobado" : "Reprobado";
+    return result;
+}
+const validateage = (edad) => {
+    let result = (edad>=0 && edad<=90) ? true : false;
     return result;
 }
 
-export {validateString, validateAvg as vAvg, checkAvg} // As : Puedo ponerle un alias
+export{validateString, validatevAvg as vAvg, checkAvg,validateage}
 

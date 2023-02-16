@@ -1,4 +1,5 @@
 'use strict'
+// Se puede selecionar un elemento de nuestro DOM por medio de 
 const parrafo2 = document.getElementsByClassName('second_P')
 //Craer un elemento
 const mySubtitle = document.createElement("h2");
