@@ -6,7 +6,7 @@ const btnMostrar = document.getElementById('btnMostrar');
 const opt = document.getElementById('opcion');
 
 opt.onchange = function (){
-    var op = document.getElementById('opcion').value; 
+    const op = document.getElementById('opcion').value; 
     if (op === 'profesor'){
         document.getElementById('text1').innerText="Nombres y apellidos:";
         document.getElementById('text2').innerText="Profesion:";
@@ -36,7 +36,7 @@ btnAgregar.onclick = function () {
     const avg = parseFloat(document.getElementById('promedio').value);
     const nameP = document.getElementById('nombre').value;
     const profesi = document.getElementById('apellido').value;
-    const age = parseFloat(document.getElementById('promedio').value);
+    const edad = parseInt(document.getElementById('promedio').value);
     const op = document.getElementById('opcion').value;
 
     if (op === 'estudiante'){
@@ -55,9 +55,9 @@ btnAgregar.onclick = function () {
             modalAlert("Datos invalidos, revisar campos");
         }
     } else if (op === 'profesor') {
-        if (validateString(nameP) && validateString(lastName) && validateString(profesi) ){
-            if (!isNaN(age) && op !=0){
-                addTeacher(name,lastName, profesi,age)
+        if (validateString(nameP) && validateString(profesi)){
+            if (!isNaN(edad) && op !=0){
+                addTeacher(nameP, profesi,edad)
                 modalAlert("Se agrego el profesor")
                 document.getElementById('nombre').value="";
                 document.getElementById('apellido').value="";

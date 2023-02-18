@@ -24,9 +24,9 @@ const paintCard = (typ) => {
         for (let i of teachers){
             const cloneTemp = templateTeacher.cloneNode(true);
             cloneTemp.querySelector('.title-card').innerHTML = "Datos del <i>Profesor</i>.";
-            cloneTemp.querySelector('.data-card').innerHTML = `NOMBRE y APELLIDOS: ${i.nom.toUpperCase()} `;
+            cloneTemp.querySelector('.data-card').innerHTML = `NOMBRE y APELLIDOS: ${i.nom.toUpperCase()}`;
             cloneTemp.querySelector('.text-profesi').innerHTML = `PROFESION: ${i.profesi.toUpperCase()}`;
-            cloneTemp.querySelector('.text-promedio').innerHTML = `EDAD: ${validateage(i.edad)}`;
+            cloneTemp.querySelector('.text-promedio').innerHTML = `EDAD: ${(i.edad)}`;
             fragment.appendChild(cloneTemp);
         }
     }
@@ -57,7 +57,7 @@ const modalAlert = (cad) => {
     const alerta = document.createElement('div');
     const texto = document.createElement('p');
     const img = document.createElement('img');
-    img.src = '../assets/img/MicrosoftTeams-image.png';
+    img.src = '../assets/img/cancelar.png';
     img.className="close";
     texto.setAttribute("class","textAlerta");
     alerta.setAttribute("id","alerta");
